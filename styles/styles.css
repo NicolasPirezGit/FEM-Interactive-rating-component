@@ -1,17 +1,116 @@
 /*
 COLORS:
     Primary: 
-        Orange: hsl(25, 97%, 53%)
+        Orange: hsla(25, 97%, 53%, 1)
 
     Neutral
-        White: hsl(0, 0%, 100%)
-        Light Grey: hsl(217, 12%, 63%)
-        Medium Grey: hsl(216, 12%, 54%)
-        Dark Blue: hsl(213, 19%, 18%)
-        Very Dark Blue: hsl(216, 12%, 8%)
+        Pure White: hsla(0, 0%, 100%, 1)
+        Light Grey: hsla(216, 12%, 63%, 1)
+        Medium Grey: hsla(217, 12%, 54%, 1)
+        Black (gradient): hsla(215, 24%, 12%, 1), hsla(215, 20%, 17%, 1)
+        Very Dark Blue: hsla(218, 11%, 8%, 1)
 
 FONT-FAMILY:
-    Add this to 'body' element: 
-        font-family: 'Dancing Script', cursive;
+    Add when needed: 
+        font-family: 'Overpass', sans-serif;
 */
 
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsla(218, 11%, 8%, 1);
+}
+
+.main-header, .main-description {
+    cursor: default;
+}
+
+.icon-container, .rating-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 412px;
+    height: 416px;
+    border-radius: 30px;
+    background: linear-gradient(25deg, hsla(215, 24%, 12%, 1), hsla(215, 10%, 17%, 1));
+}
+
+.icon-container {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: hsla(213, 19%, 18%, 1);
+}
+
+.star-icon {
+    width: 16.75px;
+    height: 16px;
+}
+
+.main-header {
+    width: 199px;
+    height: 43px;
+    font-weight: 700;
+    font-size: 24px;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.main-description {
+    width: 340px;
+    height: 72px;
+    font-size: 15px;
+    color: hsla(216, 12%, 63%, 1);
+}
+
+.rating-list {
+    display: flex;
+    width: 341px;
+    height: 51px;
+    list-style: none;
+    color: hsla(217, 12%, 54%, 1);
+}
+
+.rating-options {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: hsla(213, 19%, 18%, 1);
+}
+
+.rating-options:hover {
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(217, 12%, 54%, 1);
+}
+
+.rating-btn {
+    width: 348px;
+    height: 45px;
+    border: none;
+    border-radius: 22.5px;
+    font-size: 19px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(25, 97%, 53%, 1);
+    letter-spacing: 2px;
+}
+
+.rating-btn:hover {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(25, 97%, 53%, 1);
+}
