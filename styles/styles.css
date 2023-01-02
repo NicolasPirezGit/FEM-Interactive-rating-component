@@ -21,6 +21,7 @@ html {
 
 body {
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -35,20 +36,26 @@ body {
     cursor: default;
 }
 
-.icon-container, .rating-options {
+.main-container {
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-}
-
-.main-container {
     width: 412px;
     height: 416px;
     border-radius: 30px;
-    background: linear-gradient(25deg, hsla(215, 24%, 12%, 1), hsla(215, 10%, 17%, 1));
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+}
+
+.icon-wrapper {
+    width: 340px;
 }
 
 .icon-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -61,22 +68,26 @@ body {
 }
 
 .main-header {
-    width: 199px;
-    height: 43px;
+    width: 340px;
+    height: 35px;
+    margin-top: 1.8rem;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 28px;
     color: hsla(0, 0%, 100%, 1);
 }
 
 .main-description {
     width: 340px;
     height: 72px;
+    margin-top: 0;
     font-size: 15px;
     color: hsla(216, 12%, 63%, 1);
 }
 
 .rating-list {
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     width: 341px;
     height: 51px;
     list-style: none;
@@ -84,8 +95,13 @@ body {
 }
 
 .rating-options {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     width: 51px;
     height: 51px;
+    font-weight: 700;
     border-radius: 50%;
     cursor: pointer;
     background-color: hsla(213, 19%, 18%, 1);
@@ -97,20 +113,31 @@ body {
 }
 
 .rating-btn {
-    width: 348px;
+    width: 341px;
     height: 45px;
+    margin-top: 1.8rem;
     border: none;
     border-radius: 22.5px;
     font-size: 19px;
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
+    letter-spacing: 2px;
     cursor: pointer;
     color: hsla(0, 0%, 100%, 1);
     background-color: hsla(25, 97%, 53%, 1);
-    letter-spacing: 2px;
 }
 
 .rating-btn:hover {
     background-color: hsla(0, 0%, 100%, 1);
     color: hsla(25, 97%, 53%, 1);
+}
+
+.attribution {
+    margin-top: 1rem;
+    font-size: 11px; text-align: center;
+    color: hsla(216, 12%, 63%, 1);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
 }
