@@ -32,7 +32,7 @@ body {
     background-color: hsla(218, 11%, 8%, 1);
 }
 
-.main-header, .main-description {
+.main-header, .main-description, .attribution {
     cursor: default;
 }
 
@@ -141,3 +141,58 @@ body {
 .attribution a {
     color: hsl(228, 45%, 44%); 
 }
+
+
+/*START OF THANK YOU BOX
+
+.main-container > * {
+    cursor: default;
+}
+
+.main-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 412px;
+    height: 416px;
+    border-radius: 30px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+}
+
+.phone-icon {
+    width: 162px;
+    height: 108px;
+    margin-top: 0rem;
+}
+
+.main-select {
+    width: 193px;
+    height: 32px;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    text-align: center;
+    line-height: calc((32px * 110) / 100);
+    border-radius: 22.5px;
+    color: hsla(25, 97%, 53%, 1);
+    background-color: hsla(213, 19%, 18%, 1);
+}
+
+.main-header {
+    font-size: 28px;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, 1);
+}
+
+.main-description {
+    width: 340px;
+    height: 72px;
+    margin-top: -0.5rem;
+    margin-bottom: -1rem;
+    font-size: 15px;
+    text-align: center;
+    color: hsla(216, 12%, 63%, 1);
+}
+
+END OF THANK YOU BOX*/
