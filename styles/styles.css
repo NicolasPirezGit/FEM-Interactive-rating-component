@@ -32,7 +32,7 @@ body {
     background-color: hsla(218, 11%, 8%, 1);
 }
 
-.main-header, .main-description, .attribution {
+.rating-header, .rating-description, .attribution {
     cursor: default;
 }
 
@@ -47,11 +47,11 @@ body {
     background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
 }
 
-.icon-wrapper {
+.star-icon-wrapper {
     width: 340px;
 }
 
-.icon-container {
+.main-icon-container {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -67,7 +67,7 @@ body {
     height: 16px;
 }
 
-.main-header {
+.rating-header {
     width: 340px;
     height: 35px;
     margin-top: 1.8rem;
@@ -76,7 +76,7 @@ body {
     color: hsla(0, 0%, 100%, 1);
 }
 
-.main-description {
+.rating-description {
     width: 340px;
     height: 72px;
     margin-top: 0;
@@ -144,33 +144,22 @@ body {
 }
 
 
-/*START OF THANK YOU BOX
+/*START OF THANK YOU BOX*/
 
-.main-container > * {
+.thanks-container > * {
     cursor: default;
-}
-
-.main-container {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 412px;
-    height: 416px;
-    border-radius: 30px;
-    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
 }
 
 .phone-icon {
     width: 162px;
     height: 108px;
-    margin-top: 0rem;
+    margin-top: 0.5rem;
 }
 
 .main-select {
     width: 193px;
     height: 32px;
-    margin-top: 1.6rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     font-size: 15px;
     text-align: center;
@@ -180,13 +169,13 @@ body {
     background-color: hsla(213, 19%, 18%, 1);
 }
 
-.main-header {
+.thanks-header {
     font-size: 28px;
     font-weight: 700;
     color: hsla(0, 0%, 100%, 1);
 }
 
-.main-description {
+.thanks-message {
     width: 340px;
     height: 72px;
     margin-top: -0.5rem;
@@ -196,4 +185,4 @@ body {
     color: hsla(216, 12%, 63%, 1);
 }
 
-END OF THANK YOU BOX*/
+/*END OF THANK YOU BOX*/
