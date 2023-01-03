@@ -1,10 +1,11 @@
 const mainContainer = document.querySelector(".main-container");
 const submitBtn = document.querySelector("#submitRatingBtn");
 const ratingOptions = document.querySelectorAll(".rating-options");
-
+let selectedRating;
 
 ratingOptions.forEach((option) => {
     option.addEventListener("click", () => {
+        selectedRating = option.innerText;
         option.style.color = "hsla(0, 0%, 100%, 1)";
         option.style.backgroundColor = "hsla(25, 97%, 53%, 1)";
 
@@ -45,7 +46,7 @@ submitBtn.addEventListener("click", () => {
         <img src="images/illustration-thank-you.svg" class="phone-icon" alt="A support ticket coming out of a phone">
         
         <p class="main-select">
-            You selected 4 out of 5
+            You selected ${selectedRating} out of 5
         </p>
 
         <h1 class="thanks-header">Thank you!</h1>
