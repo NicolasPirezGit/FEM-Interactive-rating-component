@@ -3,6 +3,7 @@ const submitBtn = document.querySelector("#submitRatingBtn");
 const ratingOptions = document.querySelectorAll(".rating-options");
 let selectedRating;
 
+//START OF SELECT RATING FEATURE
 ratingOptions.forEach((option) => {
     option.addEventListener("click", () => {
         selectedRating = option.innerText;
@@ -38,21 +39,29 @@ ratingOptions.forEach((option) => {
         }
     });
 });
+//END OF SELECT RATING FEATURE
 
 
+//START OF SUBMIT RATING FEATURE
 submitBtn.addEventListener("click", () => {
-    mainContainer.classList.add("thanks-container");
-    mainContainer.innerHTML = `
-        <img src="images/illustration-thank-you.svg" class="phone-icon" alt="A support ticket coming out of a phone">
+    if(selectedRating) {
+        mainContainer.classList.add("thanks-container");
+        mainContainer.innerHTML = `
+            <img src="images/illustration-thank-you.svg" class="phone-icon" alt="A support ticket coming out of a phone">
         
-        <p class="main-select">
-            You selected ${selectedRating} out of 5
-        </p>
+            <p class="main-select">
+                You selected ${selectedRating} out of 5
+            </p>
 
-        <h1 class="thanks-header">Thank you!</h1>
+            <h1 class="thanks-header">Thank you!</h1>
   
-        <p class="thanks-message">
+            <p class="thanks-message">
             We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!
-        </p>
-    `;
+            </p>
+        `;
+    }
+    
 });
+//END OF SUBMIT RATING FEATURE
+
+
